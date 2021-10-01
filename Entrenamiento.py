@@ -1,20 +1,4 @@
-import cv2 as cv
-import numpy as np
-import os
-from time import time
-Data_ruta = "Data_Training"
-listData = os.listdir(Data_ruta)
-ids=[]
-rostrosData=[]
-id = 0
-timpoinicial = time()
-accion = input("""INICIANDO ENTRENAMIENTO
-El proceso puede durar desde minutos hasta horas
-¿desea proceder?
-SELECCIONE Y PARA INICIAR
-SELECCIONE CUALQUIER OTRA LETRA PARA FINALIZAR
-""")
-if accion == "Y":
+
     for fila in listData:
         rutacompleta = Data_ruta +"/"+ fila
         print("Iniciando lectura ...")
